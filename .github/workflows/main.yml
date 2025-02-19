@@ -15,7 +15,5 @@ jobs:
         run: cat ./README.md
       - name: npm install
         run: npm i
-      - name: run local server
-        run: npm run dev
       - name: check localhost
         run: curl localhost:5173
