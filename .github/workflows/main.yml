@@ -8,6 +8,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
       - name: print readme
-        run: cat ./readme
+        run: cat ./readme.md
       - name: check localhost
         run: curl localhost:5173
