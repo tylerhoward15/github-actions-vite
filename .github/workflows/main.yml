@@ -7,7 +7,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
+      - name: get current directory
+        run: pwd
       - name: print readme
-        run: cat ./readme.md
+        run: cat ./README.md
       - name: check localhost
         run: curl localhost:5173
