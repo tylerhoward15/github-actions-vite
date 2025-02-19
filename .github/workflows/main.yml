@@ -1,11 +1,13 @@
 on:
-	workflow_dispatch:
-  
+  workflow_dispatch:
+
 jobs:
-	build:
-		runs-on: self-hosted
-		steps:
-			- name: Checkout
-			uses: actions/checkout@v4.2.2
-			- name: Install Dependencies
-			run: npm install
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: print readme
+        run: cat ./readme
+      - name: check localhost
+        run: curl localhost:5173
